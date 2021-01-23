@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- -----------Navigation Start------------ -->
+    <main>
+        <header class="header">
+            <div class="d-flex wrap">
+                <h1 class="logo">
+                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Galary</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="javascript:void(0);" class="sidemenu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="sidemenu">
+                <a href="javascript:void(0)" class="close"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Galary</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <div class="social">
+                        <a href="#"><img src="./images/youtube.png" alt=""></a>
+                        <a href="#"><img src="./images/twitter.png" alt=""></a>
+                        <a href="#"><img src="./images/linkedin.png" alt=""></a>
+                    </div>
+                    <p>2021-Happy Coding</p>
+                </footer>
+            </div>
+        </header>
+    </main>
+  <!-- -----------Navigation End------------ -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".sidemenu-toggler").click(function(){
+                $('.sidemenu').addClass("active");
+            });
+            $(".close").click(function(){
+                $(".sidemenu").removeClass("active");
+            });
+        });
+    </script>
+
+    
+</body>
+</html>
